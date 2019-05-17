@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rest UI</title>
+  </head>
+  <body>
+
+    <h1>Login</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="login" readonly/><br>
+    Username  <input type="text" name="user" value="" required/><br>
+    Password  <input type="text" name="pass" value="" required/><br>
+    <input type="submit" value="Login"/>
+    </form>
+
+    <h1>Logoff</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="logoff" readonly/><br>
+    <input type="submit" value="Logoff"/>
+    </form>
+
+    <h1>Get Avaible languages</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-languages" readonly/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Get All Products</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-all" readonly/><br>
+    Language  <input type="text" name="lang" value="1" required/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Get Single Product</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="get-single-product" readonly/><br>
+    ID <input type="text" name="product" required/><br>
+    <input type="submit" value="Get"/>
+    </form>
+
+    <h1>Add new product</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="addProduct" readonly/><br>
+    Name <input type="text" name="name" required/><br>
+    Quantity <input type="text" name="quantity" required/><br>
+    Price <input type="text" name="price" required/><br>
+    Description <input type="text" name="description" required/><br>
+    Language  <input type="text" name="lang" value="1" required/><br>
+    <input type="submit" value="Add"/>
+    </form>
+
+    <h1>Remove</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="remove" readonly/><br>
+    ID <input type="text" name="id" required/><br>
+    <input type="submit" value="Remove"/>
+    </form>
+
+
+    <h1>Update</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="update" readonly/><br>
+    ID <input type="text" name="id" required/><br>
+    Name <input type="text" name="name" required/><br>
+    Price <input type="text" name="price" required/><br>
+    Quantity <input type="text" name="quantity" required/><br>
+    Description <input type="text" name="description" required/><br>
+    Language <input type="text" name="lang" value="1" required/><br>
+    <input type="submit" value="Update"/>
+    </form>
+
+    <h1>Add or update Language</h1>
+    <form action="rest-ui.php" method="post" target="_blank">
+    Request <input type="text" name="req" value="updateLang" readonly/><br>
+    ID <input type="text" name="id" required/><br>
+    Name <input type="text" name="name" required/><br>
+    Description <input type="text" name="description" required/><br>
+    Language <input type="text" name="lang" required/><br>
+    <input type="submit" value="Update"/>
+    </form>
+
+
+  </body>
+</html>

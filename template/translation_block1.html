@@ -1,0 +1,37 @@
+ <div class="box">
+          <div class="headlines">
+            <h2><span>Wersja: {LANG}</span></h2>
+          </div>
+          <div class="box-content">
+          <form class="formBox" method="post" action="index.php">
+            <fieldset>
+
+            
+            <div class="form-cols"><!-- two form cols -->
+            <div class="col1">
+              <div class="clearfix">
+                <div class="lab"><label for="input-one">Nazwa produktu</label></div>
+                <div class="con"><input type="text" class="input" value="{NAME}" name="name" id="input-one" /></div>
+			        </div>
+
+            </div>
+
+            </div>
+
+            <div class="clearfix">
+              <div class="lab"><label for="textarea-one">Opis</label></div>
+		          <div class="con"><textarea cols="" rows="" class="textarea" id="textarea-one" name="description">{DESCRIPTION}</textarea></div>
+		        </div>
+		<input name="id" type="hidden" value="{ID}">
+		<input name="lang_code" type="hidden" value="{LANG_CODE}">
+	     <input name="trans_save" type="hidden" value="1">'		        
+
+            <div class="btn-submit"><!-- Submit form -->
+              <input type="submit" value="Zapisz" class="button" />
+              lub <a href="" class="cancel">Anuluj</a>
+            </div>
+          </fieldset>    
+        </form>
+        </div><!-- /box-content -->
+        </div>
+        <!-- /box -->
